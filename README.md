@@ -49,7 +49,7 @@ data
 [appi.bzzlab.ch](http://appi.bzzlab.ch) is an non-commercial platform which is only 
 used for education purpose.
 
-### Credits and used frameworks
+### Credits
 The following authors, communities and open source platforms has directly contributed to that platform. Many thanks to these
 brilliant coders and open source communities!
 * [Parsedown](http://parsedown.org) as a very fast implementation to parse markdown code.
