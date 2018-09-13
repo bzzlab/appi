@@ -24,9 +24,9 @@
     ?>
 
     <p id="data"></p>
-    <!--
     <div id="message"></div>
     <div>
+    <!--
     <form id="frmStep01">
         <fieldset>
             <div>
@@ -129,6 +129,7 @@
 
     //if checkbox for saving is selected, then save lp_key | sem_key in a cookie
     $('#chkSaveUrl').click(function () {
+        $('#message').addClass("alert alert-info");
         if ($('#chkSaveUrl').is(':checked')) {
             saveInCookie = true;
             $('#message').html('Will be saved in cookies!');

@@ -66,7 +66,7 @@ class Semester
      */
     public function getAllowedValues(){
         //Return all possible semester
-        return array("01", "02", "03", "04", "05", "06", "07", "08");
+        return array("m150", "m152");
     }
 
     public function setCookieValue($value){
