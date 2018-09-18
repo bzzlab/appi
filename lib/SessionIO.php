@@ -25,8 +25,8 @@ class SessionIO
             //Quelle: http://stackoverflow.com/questions/520237/how-do-i-expire-a-php-session-after-30-minutes
             if (!isset($_SESSION['CREATED'])) {
                 $_SESSION['CREATED'] = time();
-            } else if (time() - $_SESSION['CREATED'] > 1800) {
-                // session started more than 30 minutes (30*60 seconds) ago
+            } else if (time() - $_SESSION['CREATED'] > 5400) {
+                //set the session to two lessons duration = 90 minutes (90*60 seconds)
                 // change session ID for the current session and invalidate old session ID
                 session_regenerate_id(true);
                 // update creation time
