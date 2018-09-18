@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>LB - Beiblatt</title>
+    <title>LB-Beilage</title>
     <meta charset="UTF-8">
     <?php
     include_once(__DIR__ . "/inc/exam.inc");
