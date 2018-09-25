@@ -47,6 +47,7 @@
                     <option value="none">Wählen Sie das Informatik-Modul:</option>
                     <option value="m152">Modul 152: Multimedia-Inhalte in Webauftritt integrieren</option>
                     <option value="m150">Modul 150+254: E-Business-Applikationen anpassen + Geschäftsprozesse beschreiben</option>
+                    <option value="m306">Modul 306: IT-Kleinprojekte abwickeln</option>
                 </select>&nbsp;&nbsp;
                 <input  type="submit" class="btn btn-primary" name="contStep02" value="Continue"/>&nbsp;&nbsp;
                 <input type="submit" class="btn btn-light" id="backStep02" name="backStep02" value="Back"/>

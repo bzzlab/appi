@@ -52,12 +52,21 @@ $content = new Content();
         </div>
     </div>
 </nav>
-<?php } } ?>
+<?php }
+    elseif($_GET["top"] == 2) {
+        //don't show any navigation
+    }
+} ?>
 <div class="container theme-showcase" role="main">
     <?php
     if (isset($_GET["file"])){
         $semester = new Semester();
         $teacher = new Teacher();
+        if (isset($_GET["mod"])) {
+            //at the moment only lp02
+            $teacher->setSessionValue("lp02");
+            $semester->setSessionValue($_GET["mod"]);
+        }
         $semester->setHiddenSessions();
         //V2.0 feature - add new teacher (lp)
         //expression means if not found then
