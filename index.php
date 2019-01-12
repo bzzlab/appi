@@ -46,7 +46,9 @@
                 <select name="selStep02" id="selStep02">
                     <option value="none">Wählen Sie das Informatik-Modul:</option>
                     <option value="m152">Modul 152: Multimedia-Inhalte in Webauftritt integrieren</option>
-                    <option value="m150">Modul 150+254: E-Business-Applikationen anpassen + Geschäftsprozesse beschreiben</option>
+                    <option value="m150">Modul 150: E-Business-Applikationen anpassen</option>
+                    <option value="m150_254">Modul 150+254: E-Business-Applikationen anpassen + Geschäftsprozesse beschreiben</option>
+                    <option value="m242">Modul 242: Mikroprozessoranwendung realisieren</option>
                     <option value="m306">Modul 306: IT-Kleinprojekte abwickeln</option>
                 </select>&nbsp;&nbsp;
                 <input  type="submit" class="btn btn-primary" name="contStep02" value="Continue"/>&nbsp;&nbsp;
