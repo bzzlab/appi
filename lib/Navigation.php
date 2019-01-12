@@ -75,6 +75,7 @@ class Navigation
         $this->teacher->setSessionValue($lp);
         $this->sem->setSessionValue($sem);
         $this->sem->redirect($lp,$sem);
+        return true;
     }
 
     /**
@@ -89,7 +90,6 @@ class Navigation
         $topNavList = array("Home" => $base_url . "/home.md",
             "Agenda" => sprintf("content.php?inc=1&file=data/%s/%s/org/agenda.md",$lp, $sem),
             "Organisation" => $base_url . "/organisation.md",
-            "Lernziele" => $base_url . "/lernziele.md",
             "Module" => "index.php?clear=all");
         return $topNavList;
     }
@@ -97,7 +97,7 @@ class Navigation
     public function getDropDownMenuSites()
     {
         $sem = $this->sem->getSessionValue();
-        $base_url = "content.php?file=org/" . $sem;
+        //$base_url = "content.php?file=org/" . $sem;
 
         $topNavList = array(
             "Selfhtml" => "https://wiki.selfhtml.org",
