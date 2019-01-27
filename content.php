@@ -60,14 +60,19 @@ $content = new Content();
 <div class="container theme-showcase" role="main">
     <?php
     if (isset($_GET["file"])){
+        /* set semester (teaching module id) if provided as GET parameter
+           and used for direct reference/link
+        */
         $semester = new Semester();
         $teacher = new Teacher();
-        if (isset($_GET["mod"])) {
-            //at the moment only lp02
-            $teacher->setSessionValue("lp02");
-            $semester->setSessionValue($_GET["mod"]);
+        if (isset($_GET["sem"])) {
+            $semester->setSessionValue($_GET["sem"]);
         }
         $semester->setHiddenSessions();
+        if (isset($_GET["lp"])) {
+            $teacher->setSessionValue($_GET["lp"]);
+        }
+
         //V2.0 feature - add new teacher (lp)
         //expression means if not found then
         $sem = $semester->getSessionValue();
